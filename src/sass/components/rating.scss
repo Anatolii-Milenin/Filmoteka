@@ -1,0 +1,57 @@
+/* стили для рейтинга */
+
+.movie-rating {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  /* margin-top: 8px; */
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rating-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.rating-stars {
+  display: flex;
+}
+
+.rating-star {
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 20%;
+  margin-right: 2px;
+  border: 0.5px solid #ff6b01;
+  background-color: #fff;
+}
+
+.rating-star.full {
+  background-color: #ff6b01;
+}
+
+.rating-stars-container {
+  display: flex;
+  align-items: center;
+}
+
+/* стили для экранов с шириной до 320px */
+@media only screen and (max-width: 320px) {
+  .rating-stars-container {
+    margin-left: 0;
+  }
+  .movie-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20px; */
+  }
+  .rating-stars {
+    flex-wrap: wrap;
+  }
+}
